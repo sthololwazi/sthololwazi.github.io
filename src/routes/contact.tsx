@@ -11,7 +11,7 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Sthololwazi Projects" },
+     { property: "og:title", content: "Contact | Sthololwazi Projects" },
       {
         name: "description",
         content:
@@ -55,12 +55,13 @@ const message = `*New Quote Request – Sthololwazi Projects*
 *Project Brief:*
 ${values.project_brief}`;
 
-    const whatsappUrl = `https://wa.me/27646204247?text=${encodeURIComponent(message)}`;
+    const whatsappUrl =
+  `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
 
    toast.success(
-  "Your quote request has been prepared. Please press Send in WhatsApp to complete the submission."
+  "Your quote request has been prepared. Please press Send to WhatsApp to complete the submission."
 );
 
     setSubmitted(true);
@@ -82,8 +83,8 @@ ${values.project_brief}`;
             Let's build something that lasts.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-foreground/75">
-            Tell us about your scope — tender, private development, renovation or material supply.
-            We respond within 48 hours.
+            Tell us about your project.
+            We respond within 24 hours.
           </p>
         </div>
       </section>
@@ -193,10 +194,10 @@ ${values.project_brief}`;
               {submitted && (
                 <div className="mt-6 flex items-start gap-3 rounded-lg border border-forest/20 bg-forest/5 p-4 text-sm text-forest">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0" />
-                  <div>
-                   <div className="font-semibold">WhatsApp opened successfully.</div>
-Please press <strong>Send</strong> in WhatsApp to submit your quote request. Our team will respond within 48 hours.
-                  </div>
+<div>
+  <div className="font-semibold">WhatsApp opened successfully.</div>
+  Please press <strong>Send</strong> in WhatsApp to submit your quote request.
+  Our team aims to respond within <strong>24 hours</strong>.
                 </div>
               )}
             </form>
