@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter, MessageCircle } from "lucide-react";
 import { SITE, NAV } from "@/lib/site";
 
 export function Footer() {
@@ -19,6 +19,30 @@ export function Footer() {
           <p className="mt-6 max-w-md font-serif text-lg italic text-primary-foreground/85">
             {SITE.slogan}
           </p>
+          <div className="mt-6 flex items-center gap-3">
+            {[
+              { href: SITE.social.facebook, label: "Facebook", Icon: Facebook },
+              { href: SITE.social.instagram, label: "Instagram", Icon: Instagram },
+              { href: SITE.social.linkedin, label: "LinkedIn", Icon: Linkedin },
+              { href: SITE.social.x, label: "X (Twitter)", Icon: Twitter },
+              {
+                href: `https://wa.me/${SITE.whatsapp}`,
+                label: "WhatsApp",
+                Icon: MessageCircle,
+              },
+            ].map(({ href, label, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-primary-foreground/20 text-primary-foreground/80 transition hover:border-gold-soft hover:text-gold-soft"
+              >
+                <Icon className="h-4 w-4" />
+              </a>
+            ))}
+          </div>
         </div>
 
         <div>

@@ -1,4 +1,4 @@
-import logoUrl from "@/assets/logo.png";
+import logoAsset from "@/assets/sthololwazi-logo.jpg.asset.json";
 
 export const SITE = {
   name: "Sthololwazi Projects (Pty) Ltd",
@@ -8,9 +8,16 @@ export const SITE = {
   region: "Mbombela, Mpumalanga",
   phone: "064 620 4247",
   phoneIntl: "+27646204247",
+  whatsapp: "27646204247",
   email: "projectssithololwazi@gmail.com",
   address: "K01041 Hilaria, Msogwaba, Mbombela 1215, Mpumalanga, South Africa",
-  logo: logoUrl,
+  logo: logoAsset.url,
+  social: {
+    facebook: "https://facebook.com/",
+    instagram: "https://instagram.com/",
+    linkedin: "https://linkedin.com/",
+    x: "https://x.com/",
+  },
   compliance: {
     reg: "2017/135433/07",
     tax: "9071664248",

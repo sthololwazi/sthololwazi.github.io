@@ -10,8 +10,10 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import logoUrl from "../assets/logo.png";
+import logoAsset from "../assets/sthololwazi-logo.jpg.asset.json";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+
+const logoUrl = logoAsset.url;
 import { Toaster } from "../components/ui/sonner";
 
 function NotFoundComponent() {
@@ -87,7 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/png", href: logoUrl },
+      { rel: "icon", type: "image/jpeg", href: logoUrl },
       { rel: "apple-touch-icon", href: logoUrl },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
