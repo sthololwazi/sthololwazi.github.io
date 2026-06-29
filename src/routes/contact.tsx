@@ -11,13 +11,21 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
+<<<<<<< HEAD
       { title: "Contact & Request a Quote Sthololwazi Projects" },
+=======
+     { property: "og:title", content: "Contact | Sthololwazi Projects" },
+>>>>>>> d75b2d630d321102df43867d67ef2859c53e82bc
       {
         name: "description",
         content:
-          "Request a quote or contact Sthololwazi Projects in Mbombela, Mpumalanga. 48-hour reply on tender and private development enquiries.",
+          "Request a quote or contact Sthololwazi Projects in Mbombela, Mpumalanga. Express 24 hr response on enquiries.",
       },
+<<<<<<< HEAD
       { property: "og:title", content: "Contact  Sthololwazi Projects" },
+=======
+      { property: "og:title", content: "Contact Sthololwazi Projects" },
+>>>>>>> d75b2d630d321102df43867d67ef2859c53e82bc
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -45,6 +53,7 @@ function ContactPage() {
 
 const onSubmit = async (values: QuoteValues) => {
   try {
+<<<<<<< HEAD
     const message = `New Quote Request  Sthololwazi Projects
 
 Name: ${values.name}
@@ -68,8 +77,35 @@ ${values.project_brief}`;
     toast.error("Unable to open WhatsApp. Please try again or call us.");
   }
 };
+=======
+const message = `*New Quote Request – Sthololwazi Projects*
+>>>>>>> d75b2d630d321102df43867d67ef2859c53e82bc
 
-  return (
+*Name:* ${values.name}
+*Company:* ${values.company || "Not provided"}
+*Email:* ${values.email}
+*Phone:* ${values.phone}
+
+*Project Brief:*
+${values.project_brief}`;
+
+const whatsappUrl = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+
+toast.success(
+  "Your quote request has been prepared. Please press Send to WhatsApp to complete the submission."
+);
+
+setSubmitted(true);
+    reset();
+  } catch (error) {
+    console.error(error);
+    toast.error("Unable to open WhatsApp. Please try again or call us.");
+  }
+};
+
+return (
     <SiteLayout>
       <section className="border-b border-border bg-background">
         <div className="mx-auto max-w-7xl px-5 pt-20 pb-12 lg:px-10 lg:pt-28">
@@ -80,8 +116,13 @@ ${values.project_brief}`;
             Let's build something that lasts.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-foreground/75">
+<<<<<<< HEAD
             Tell us about your scope  tender, private development, renovation or material supply.
             We respond within 48 hours.
+=======
+            Tell us about your project.
+            We respond within 24 hours.
+>>>>>>> d75b2d630d321102df43867d67ef2859c53e82bc
           </p>
         </div>
       </section>
@@ -183,26 +224,32 @@ ${values.project_brief}`;
                   {isSubmitting ? (
                     <><Loader2 className="h-4 w-4 animate-spin" /> Sending…</>
                   ) : (
-                    <>Send request</>
+                    <>Send via WhatsApp</>
                   )}
                 </button>
               </div>
 
-              {submitted && (
-                <div className="mt-6 flex items-start gap-3 rounded-lg border border-forest/20 bg-forest/5 p-4 text-sm text-forest">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0" />
-                  <div>
-                    <div className="font-semibold">Request received.</div>
-                    A member of the team will be in touch within 48 hours.
-                  </div>
-                </div>
-              )}
-            </form>
-          </div>
-        </div>
-      </section>
+            {submitted && (
+  <div className="mt-6 flex items-start gap-3 rounded-lg border border-forest/20 bg-forest/5 p-4 text-sm text-forest">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0" />
+    <div>
+      <div className="font-semibold">
+        WhatsApp opened successfully.
+      </div>
 
-      <style>{`
+      <p className="mt-1">
+        Please press <strong>Send</strong> in WhatsApp to submit your quote
+        request. Our team aims to respond within <strong>24 hours</strong>.
+      </p>
+    </div>
+  </div>
+)}
+      </form>
+    </div>
+  </div>
+</section>
+
+ <style>{`
         .form-input {
           width: 100%;
           border-radius: 0.5rem;

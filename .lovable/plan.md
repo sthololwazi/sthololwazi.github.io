@@ -48,5 +48,3 @@ Generate hero (construction site at golden hour with workers reviewing plans), c
 
 ## Tech stack
 TanStack Start v1 + React 19 + Tailwind v4 (tokens via `@theme inline` in `src/styles.css`). Lovable Cloud for the quote form. No third-party libs beyond what's already configured.
-
-Reply "go" and I'll build the whole site against this reference.
