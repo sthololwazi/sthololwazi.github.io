@@ -1,8 +1,13 @@
-import { copyFileSync } from "node:fs";
+import { existsSync, copyFileSync } from "node:fs";
 
-copyFileSync(
-  "dist/client/index.html",
-  "dist/client/404.html",
-);
+const source = existsSync("dist/index.html")
+  ? "dist/index.html"
+  : "dist/client/index.html";
 
-console.log("Created dist/client/404.html");
+const destination = existsSync("dist/index.html")
+  ? "dist/404.html"
+  : "dist/client/404.html";
+
+copyFileSync(source, destination);
+
+console.log(`Copied ${source} -> ${destination}`);
