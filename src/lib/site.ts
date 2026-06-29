@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/sthololwazi-logo.jpg.asset.json";
+import logoAsset from "@/assets/logocircle.jpg";
 
 export const SITE = {
   name: "Sthololwazi Projects (Pty) Ltd",
@@ -9,9 +9,9 @@ export const SITE = {
   phone: "064 620 4247",
   phoneIntl: "+27646204247",
   whatsapp: "27646204247",
-  email: "projectssithololwazi@gmail.com",
+  email: "projectssthololwazi@gmail.com",
   address: "K01041 Hilaria, Msogwaba, Mbombela 1215, Mpumalanga, South Africa",
-  logo: logoAsset.url,
+  logo: "@/assets/logocircle.jpg",
   social: {
     facebook: "https://facebook.com/",
     instagram: "https://instagram.com/",
