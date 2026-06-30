@@ -88,9 +88,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "X Sthololwazi Projects" },
       { name: "description", content: "Sthololwazi Projects (Pty) Ltd is a CIDB-registered South African construction company delivering civil engineering, building construction, renovations, maintenance and material supply throughout Mpumalanga." },
       { property: "og:description", content: "Sthololwazi Projects (Pty) Ltd is a CIDB-registered South African construction company delivering civil engineering, building construction, renovations, maintenance and material supply throughout Mpumalanga." },
-      { name: "twitter:description", content: "Sthololwazi Projects (Pty) Ltd is a CIDB-registered South African construction company delivering civil engineering, building construction, renovations, maintenance and material supply throughout Mpumalanga." },
       {property: "og:image", content: "https://sthololwaziprojects.co.za/og-image.png",},
-      {name: "twitter:image",  content: "https://sthololwaziprojects.co.za/twitter-image.png",},
+
      ],
      links: [
       { rel: "stylesheet", href: appCss },
