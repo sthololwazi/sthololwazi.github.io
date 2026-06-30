@@ -44,7 +44,7 @@ function AboutPage() {
           <p className="mt-6 max-w-2xl text-lg text-foreground/75">
             Sthololwazi Projects (Pty) Ltd was founded in {SITE.established} in Mbombela,
             Mpumalanga, in response to a regional need for technically excellent construction that
-            simultaneously advances Broad-based Black Economic Empowerment.
+            simultaneously advances Broad-based Economic Empowerment.
           </p>
         </div>
       </section>
@@ -67,7 +67,7 @@ function AboutPage() {
               <p>
                 We are a 100% black-owned construction firm operating across building, civil
                 engineering and material supply. Building Construction is our core division and
-                primary business driver — the work that anchors everything else we do.
+                primary business driver the work that anchors everything else we do.
               </p>
               <p>
                 Every site we open begins with a workforce plan. We hire locally, partner with ward
@@ -75,7 +75,7 @@ function AboutPage() {
                 on-the-job training through our "Each One, Teach One" mentorship programme.
               </p>
               <p>
-                Our work spans government tenders, private developments and community projects —
+                Our work spans government tenders, private developments and community projects
                 from a single classroom renovation to a 500-unit RDP housing delivery valued at
                 R53 million.
               </p>
