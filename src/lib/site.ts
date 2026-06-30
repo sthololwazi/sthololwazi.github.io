@@ -1,4 +1,4 @@
-import logoAsset from "src/assets/logocircle.jpg";
+import logo from "src\\assets\\logo-source.jpg";
 
 export const SITE = {
   name: "Sthololwazi Projects (Pty) Ltd",
@@ -11,7 +11,7 @@ export const SITE = {
   whatsapp: "27646204247",
   email: "projectssthololwazi@gmail.com",
   address: "K01041 Hilaria, Msogwaba, Mbombela 1215, Mpumalanga, South Africa",
-  logo: "src/assets/logocircle.jpg",
+  logo: logo,
   social: {
     facebook: "https://facebook.com/",
     instagram: "https://instagram.com/",
