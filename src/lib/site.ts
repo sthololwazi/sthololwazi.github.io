@@ -36,3 +36,5 @@ export const NAV = [
   { to: "/projects", label: "Projects" },
   { to: "/contact", label: "Contact" },
 ] as const;
+export { logoUrl };
+

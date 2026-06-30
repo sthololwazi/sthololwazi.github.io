@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Phone } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import { SITE } from "@/lib/site";
-import logo from "@/assets/logo-source.jpg";
 import heroImg from "@/assets/hero-construction.jpg";
 import craftImg from "@/assets/craft-bricks.jpg";
 import rdpImg from "@/assets/project-rdp.jpg";
