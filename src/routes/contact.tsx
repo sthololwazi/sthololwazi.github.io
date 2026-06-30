@@ -11,21 +11,13 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-<<<<<<< HEAD
-      { title: "Contact & Request a Quote Sthololwazi Projects" },
-=======
      { property: "og:title", content: "Contact | Sthololwazi Projects" },
->>>>>>> d75b2d630d321102df43867d67ef2859c53e82bc
       {
         name: "description",
         content:
           "Request a quote or contact Sthololwazi Projects in Mbombela, Mpumalanga. Express 24 hr response on enquiries.",
       },
-<<<<<<< HEAD
-      { property: "og:title", content: "Contact  Sthololwazi Projects" },
-=======
       { property: "og:title", content: "Contact Sthololwazi Projects" },
->>>>>>> d75b2d630d321102df43867d67ef2859c53e82bc
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -51,49 +43,19 @@ function ContactPage() {
     formState: { errors, isSubmitting },
   } = useForm<QuoteValues>({ resolver: zodResolver(quoteSchema) });
 
-const onSubmit = async (values: QuoteValues) => {
+  const onSubmit = async (values: QuoteValues) => {
   try {
-<<<<<<< HEAD
-    const message = `New Quote Request  Sthololwazi Projects
+    const message = `New Quote Request — Sthololwazi Projects
+      Name: ${values.name}
+      Company: ${values.company || "Not provided"}
+      Email: ${values.email}
+      Phone: ${values.phone}
+      Project brief: ${values.project_brief}`;
 
-Name: ${values.name}
-Company: ${values.company || "Not provided"}
-Email: ${values.email}
-Phone: ${values.phone}
+      const whatsappUrl = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
 
-Project brief:
-${values.project_brief}`;
-
-    const whatsappUrl = `https://wa.me/27646204247?text=${encodeURIComponent(message)}`;
-
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-
-    toast.success("Request received  WhatsApp has been opened.");
-
-    setSubmitted(true);
-    reset();
-  } catch (error) {
-    console.error(error);
-    toast.error("Unable to open WhatsApp. Please try again or call us.");
-  }
-};
-=======
-const message = `*New Quote Request – Sthololwazi Projects*
->>>>>>> d75b2d630d321102df43867d67ef2859c53e82bc
-
-*Name:* ${values.name}
-*Company:* ${values.company || "Not provided"}
-*Email:* ${values.email}
-*Phone:* ${values.phone}
-
-*Project Brief:*
-${values.project_brief}`;
-
-const whatsappUrl = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
-
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-
-toast.success(
+    toast.success(
   "Your quote request has been prepared. Please press Send to WhatsApp to complete the submission."
 );
 
@@ -116,13 +78,8 @@ return (
             Let's build something that lasts.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-foreground/75">
-<<<<<<< HEAD
-            Tell us about your scope  tender, private development, renovation or material supply.
-            We respond within 48 hours.
-=======
             Tell us about your project.
             We respond within 24 hours.
->>>>>>> d75b2d630d321102df43867d67ef2859c53e82bc
           </p>
         </div>
       </section>

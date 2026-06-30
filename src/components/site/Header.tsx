@@ -11,7 +11,7 @@ export function Header() {
         <Link to="/" className="flex items-center gap-3" aria-label={SITE.name}>
           <img
             src={SITE.logo}
-            alt=""
+            alt="Official website of Sthololwazi Projects"
             width={44}
             height={44}
             className="h-11 w-11 shrink-0"
