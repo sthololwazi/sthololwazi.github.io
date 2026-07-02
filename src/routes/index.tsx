@@ -109,9 +109,9 @@ function Index() {
               Building infrastructure. <em className="text-gold-soft">Empowering</em> communities.
             </h1>
             <p className="mt-7 max-w-xl text-base text-primary-foreground/85 lg:text-lg">
-              A 100% black-owned, B-BBEE Level 1 building and civil construction partner — pairing
+              A 100% black-owned, B-BBEE Level 1 building and civil construction partner pairing
               technical mastery with a measurable mandate to upskill the workforces of the
-              communities we build in.
+              communities we build in. ervices include house construction, plastering, tiling, roofing, plumbing, electrical, landscaping, pool construction, renovations, and in-house block & brick supply. One company, every trade and built for Mpumalanga's growing residential and development sector.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
@@ -157,7 +157,7 @@ function Index() {
           </div>
           <div className="lg:col-span-8">
             <h2 className="font-serif text-4xl leading-tight text-forest sm:text-5xl">
-              Not a contractor. An infrastructure &amp; social-development partner.
+              Not just a contractor but aninfrastructure &amp; social-development partner.
             </h2>
             <div className="mt-8 grid gap-6 text-base text-foreground/80 lg:grid-cols-2">
               <p>
@@ -166,14 +166,14 @@ function Index() {
                 Sthololwazi Projects operates on a dual mandate.
               </p>
               <p>
-                We deliver high-quality building and civil works — and we ensure every project
+                We deliver high-quality building and civil works and we ensure every project
                 leaves behind a lasting legacy of skills, local employment, and economic dignity for
                 previously disadvantaged communities.
               </p>
             </div>
             <blockquote className="mt-10 border-l-2 border-gold pl-6 font-serif text-2xl italic text-forest">
               "Building infrastructure. Empowering communities. Mending the future — one brick, one
-              skill, one life at a time."
+              skill, one life at a time. One company. Every trade. No job too big or too small. Proudly building Mpumalanga's future one home, one development at a time."
             </blockquote>
           </div>
         </div>
@@ -192,7 +192,7 @@ function Index() {
               </h2>
               <p className="mt-4 max-w-xl text-foreground/75">
                 Three integrated divisions delivering technical excellence and measurable
-                empowerment on every project — from bulk earthworks to handover. Building is our
+                empowerment on every project from bulk earthworks to handover. Building is our
                 core division and primary business driver.
               </p>
             </div>
@@ -370,7 +370,7 @@ function Index() {
             <p className="mt-5 max-w-xl text-foreground/75">
               From RDP homes to commercial complexes, every brick, tile and pipe is installed to
               SANS standards. We are accountable to the communities we build in, and we hire
-              locally on every site.
+              locally on every site. House construction, plastering, tiling, roofing, plumbing, electrical, landscaping, pool construction, renovations, and in-house block & brick supply. One company, every trade built for Mpumalanga's growing residential and development sector.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
@@ -435,7 +435,7 @@ function Index() {
             Let's build something that lasts.
           </h2>
           <p className="mt-5 mx-auto max-w-2xl text-primary-foreground/80">
-            Whether it's a tender response, a private development, or a community project — start a
+            Whether it's a tender response, a private development, or a community project start a
             conversation with the team in Mbombela.
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-3">
