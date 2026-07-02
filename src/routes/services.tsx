@@ -32,7 +32,13 @@ const SERVICES = [
       "Commercial structures (SANS 10400T)",
       "Renovations & alterations",
       "SANS 523 suspended ceilings",
-      "Plumbing, tiling & welding fit-out",
+      "✅ House Construction",
+      "✅ Plastering & Tiling",
+      "✅ Roofing",
+      "✅ Plumbing & Electrical",
+      "✅ Landscaping & Pool Construction",
+      "✅ Renovations",
+      "✅ Block & Brick Supply"
     ],
     featured: true,
   },
@@ -82,7 +88,7 @@ function ServicesPage() {
           <p className="mt-6 max-w-2xl text-lg text-foreground/75">
             Building Construction is our core division and primary business driver. Civil
             Construction and Material Supply round out an integrated capability that lets us own
-            scope end-to-end — from earthworks to handover.
+            scope end-to-end from earthworks to handover.
           </p>
         </div>
       </section>

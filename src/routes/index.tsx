@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
           foundingDate: String(SITE.established),
           address: {
             "@type": "PostalAddress",
-            streetAddress: "K01041 Hilaria, Msogwaba",
+            streetAddress: "K010411 Hilaria, Msogwaba",
             addressLocality: "Mbombela",
             postalCode: "1215",
             addressRegion: "Mpumalanga",

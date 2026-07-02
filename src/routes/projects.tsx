@@ -104,7 +104,7 @@ function ProjectsPage() {
           <div className="mt-20 rounded-2xl border border-border bg-muted/40 p-10 text-center">
             <h2 className="font-serif text-3xl text-forest">Have a project brief?</h2>
             <p className="mt-3 mx-auto max-w-xl text-foreground/75">
-              We respond to tender and private enquiries within 48 hours.
+              We respond to inquiries within 48 hours.
             </p>
             <Link
               to="/contact"
